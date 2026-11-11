@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kamyla Napole | Fisioterapeuta em Bebedouro e Monte Azul Paulista</title>
+<meta name="description" content="Fisioterapia traumato-ortopédica, esportiva e geriátrica, terapia manual e reabilitação funcional. Consultório em Bebedouro e atendimento domiciliar em Bebedouro e Monte Azul Paulista. CREFITO 3-405188-F.">
+<meta property="og:title" content="Kamyla Napole | Fisioterapeuta">
+<meta property="og:description" content="Volte a se mover sem dor, com segurança e autonomia. Agende sua avaliação.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#25352A">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F3F5F1}
+*{box-sizing:border-box}
+a{color:#48664E}a:hover{color:#25352A}
+details summary{list-style:none;cursor:pointer}
+details summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+.faq-plus{transition:transform .2s ease}
+.btn-wa:hover{background:#3C5842 !important}
+.btn-light:hover{background:#E6EEE4 !important}
+.card-hover:hover{transform:translateY(-4px)}
+.card-hover{transition:transform .25s ease}
+
+.hero-m{display:none}
+.cta-short{display:none}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.wa-fab{opacity:0;pointer-events:none;transform:translateY(12px);transition:opacity .25s ease,transform .25s ease}
+.wa-fab.show{opacity:1;pointer-events:auto;transform:none}
+@media (max-width:860px){
+ body{font-size:16px}
+ .hero-d{display:none !important}
+ .hero-m{display:flex;flex-direction:column;position:relative;overflow:hidden;background:#1c2820;padding:0 !important;height:calc(100svh - 64px);min-height:540px;max-height:820px}
+ .hero-m-bg{position:absolute;left:0;top:-13%;width:100%;height:100%;object-fit:cover;object-position:center 12%}
+ .hero-m-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,40,32,0) 0%,rgba(28,40,32,0) 24%,rgba(28,40,32,.82) 46%,#1c2820 60%,#1c2820 100%)}
+ .hero-m-content{position:relative;z-index:1;flex:1 1 auto;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;padding:0 20px 14px}
+ .hero-m-content>*{animation:rise .7s ease both}
+ .hero-m-content>*:nth-child(2){animation-delay:.08s}.hero-m-content>*:nth-child(3){animation-delay:.16s}.hero-m-content>*:nth-child(4){animation-delay:.24s}.hero-m-content>*:nth-child(5){animation-delay:.32s}
+ .hero-m-tag{align-self:flex-start;padding:6px 11px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:10px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:#D3E2D0;white-space:nowrap}
+ .hero-m-title{margin:0;font-family:'Outfit',sans-serif;font-weight:600;font-size:clamp(28px,8vw,34px);line-height:1.05;letter-spacing:-.02em;color:#fff}
+ .hero-m-sub{margin:0;font-size:14.5px;line-height:1.45;color:rgba(255,255,255,.85)}
+ .hero-m-btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;margin-top:4px;border-radius:999px;background:#fff;color:#25352A !important;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+ .hero-m-name{text-align:center;font-size:12.5px;color:rgba(255,255,255,.65)}
+ .marquee{position:relative;z-index:1;overflow:hidden;flex:0 0 auto;padding:10px 0 12px;border-top:1px solid rgba(255,255,255,.12);background:#1c2820;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+ header > div{padding:10px 16px !important}
+ header img{height:42px !important}
+ header .btn-wa{min-height:40px !important;padding:0 16px !important;font-size:14px}
+ footer > div:first-child{display:grid !important;grid-template-columns:1fr 1fr;padding:18px 16px 10px !important;gap:10px 14px !important}
+ footer > div:first-child > div{flex:none !important;min-width:0;gap:2px !important;font-size:11.5px !important;line-height:1.35}
+ footer > div:first-child > div:first-child{grid-column:1 / -1;flex-direction:row !important;align-items:center;justify-content:space-between;gap:10px !important;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.1)}
+ footer > div:first-child > div:first-child > span{font-size:11px !important}
+ footer > div:first-child > div > span:first-child{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
+ footer img{width:96px !important}
+ footer > div:last-child{padding:6px 16px 12px !important;font-size:10.5px !important;border-top:none !important}
+ .marquee-track{display:flex;align-items:center;gap:14px;width:max-content;animation:mq 26s linear infinite}
+ .mq-item{white-space:nowrap;padding:8px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;font-size:14px;font-weight:600}
+ .mq-dot{width:6px;height:6px;border-radius:50%;background:#7FA37F;flex:0 0 6px}
+ h2{font-size:30px !important}
+ section > div{padding-left:20px !important;padding-right:20px !important;gap:32px !important}
+ .rail{flex-wrap:nowrap !important;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:20px;margin:0 -20px;padding:0 20px 6px;gap:14px !important;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+ .rail::-webkit-scrollbar{display:none}
+ .rail>*{flex:0 0 80% !important;scroll-snap-align:start;flex-direction:column !important}
+ .rail img{height:220px !important}
+ .rail [style*="flex: 0 0 52px"]{flex:0 0 auto !important;width:52px}
+ .city-title{font-size:22px !important;line-height:1.2}
+ .city-title span{display:none}
+ .cities>div{padding:26px !important}
+ .sobre-img-2{display:none}
+ .sobre-img{height:380px !important}
+ #contato{position:relative;background:#1c2820 !important}
+ #contato > div{position:relative;min-height:760px;flex-direction:column;justify-content:flex-end;align-items:stretch !important;padding-top:400px !important;padding-bottom:44px !important}
+ #contato > div > div:first-child{position:relative;z-index:1;flex:0 0 auto !important;gap:16px !important}
+ .cta-photo{position:absolute !important;inset:0;z-index:0;flex:none !important}
+ .cta-photo img{width:100% !important;height:100% !important;border-radius:0 !important;object-position:center 18% !important}
+ .cta-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,40,32,0) 0,rgba(28,40,32,0) 34%,rgba(28,40,32,.82) 54%,#1c2820 72%,#1c2820 100%)}
+ #contato a.btn-light{align-self:stretch !important;justify-content:center}
+ .cta-long{display:none}.cta-short{display:inline}
+}
+@media (prefers-reduced-motion:reduce){.marquee-track,.hero-m-content>*{animation:none}}
+
+html{scroll-behavior:smooth}
+img{max-width:100%}
+.wa-fab{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:#48664E;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(37,53,42,.35);z-index:50;transition:transform .2s ease}
+.wa-fab:hover{transform:scale(1.06);color:#fff}
+@media (max-width:860px){
+ .nav-link{display:none}
+ section > div{padding-top:64px !important;padding-bottom:64px !important}
+ .hero-img{height:460px !important}
+ .hero-card{left:16px !important;bottom:16px !important}
+ .tall-img{height:420px !important}
+ .sobre-img{height:340px !important;margin-top:0 !important}
+}
+</style>
+</head>
+<body>
+<div style="width: 100%; font-family: 'Manrope', system-ui, sans-serif; color: #25352A; background: #F3F5F1; font-size: 17px; line-height: 1.6;">
+
+<!-- HEADER -->
+<header style="background: #FFFFFF; border-bottom: 1px solid #E1E6DF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+<a href="#topo" style="display: flex; align-items: center;"><img src="img/logo.png" alt="Kamyla Napole Fisioterapeuta" style="height: 52px; width: auto; display: block;"></a>
+<nav aria-label="Principal" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 600;">
+<a class="nav-link" href="#especialidades" style="color: #25352A; text-decoration: none;">Especialidades</a>
+<a class="nav-link" href="#como-funciona" style="color: #25352A; text-decoration: none;">Como funciona</a>
+<a class="nav-link" href="#sobre" style="color: #25352A; text-decoration: none;">Sobre</a>
+<a class="nav-link" href="#atendimento" style="color: #25352A; text-decoration: none;">Atendimento</a>
+<a class="nav-link" href="#formacao" style="color: #25352A; text-decoration: none;">Formação</a>
+<a class="btn-wa" href="https://wa.me/5517991807798?text=Ol%C3%A1%2C%20Kamyla!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 20px; border-radius: 999px; background: #48664E; color: #FFFFFF; text-decoration: none;">Agendar avaliação</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="topo" style="background: #25352A; color: #FFFFFF; overflow: hidden;">
+<div class="hero-m">
+<img class="hero-m-bg" src="img/kamyla-studio.jpg" alt="Kamyla Napole, fisioterapeuta, sorrindo em frente ao símbolo da marca" fetchpriority="high">
+<div class="hero-m-shade" aria-hidden="true"></div>
+<div class="hero-m-content">
+<span class="hero-m-tag">Fisioterapia · Reabilitação · Saúde · Performance</span>
+<h1 class="hero-m-title">Da recuperação à performance. <span style="color:#BFD3BC;display:block">Em todas as fases da vida.</span></h1>
+<p class="hero-m-sub">Fisioterapia traumato-ortopédica, esportiva e geriátrica para tratar a causa da dor, não só o sintoma. Um novo padrão de cuidado em reabilitação, saúde e performance.</p>
+<a class="hero-m-btn" href="https://wa.me/5517991807798?text=Ol%C3%A1%2C%20Kamyla!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg>Agendar minha avaliação</a>
+</div>
+<div class="marquee" aria-label="Avaliação completa, acompanhamento individual, tratamento personalizado, Bebedouro e Monte Azul Paulista"><div class="marquee-track" aria-hidden="true"><span class="mq-item">Avaliação completa</span><span class="mq-dot" aria-hidden="true"></span><span class="mq-item">Acompanhamento individual</span><span class="mq-dot" aria-hidden="true"></span><span class="mq-item">Tratamento personalizado</span><span class="mq-dot" aria-hidden="true"></span><span class="mq-item">Bebedouro e Monte Azul Paulista</span><span class="mq-dot" aria-hidden="true"></span><span class="mq-item">Avaliação completa</span><span class="mq-dot" aria-hidden="true"></span><span class="mq-item">Acompanhamento individual</span><span class="mq-dot" aria-hidden="true"></span><span class="mq-item">Tratamento personalizado</span><span class="mq-dot" aria-hidden="true"></span><span class="mq-item">Bebedouro e Monte Azul Paulista</span><span class="mq-dot" aria-hidden="true"></span></div></div>
+</div>
+<div class="hero-d" style="max-width: 1240px; margin: 0 auto; padding: 88px 24px 96px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px;">
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 28px;">
+<span style="display: inline-flex; align-self: flex-start; align-items: center; gap: 10px; padding: 8px 16px; border: 1px solid rgba(255,255,255,0.22); border-radius: 999px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #BFD3BC;">Fisioterapia · Reabilitação · Saúde · Performance</span>
+<h1 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: clamp(40px, 5.4vw, 72px); line-height: 1.04; letter-spacing: -0.02em;">Da recuperação à performance. <span style="color: #BFD3BC; display: block;">Em todas as fases da vida.</span></h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: rgba(255,255,255,0.82); max-width: 540px;">Fisioterapia traumato-ortopédica, esportiva e geriátrica para tratar a causa da dor, não só o sintoma. Um novo padrão de cuidado em reabilitação, saúde e performance.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; padding-top: 4px;">
+<a class="btn-light" href="https://wa.me/5517991807798?text=Ol%C3%A1%2C%20Kamyla!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 28px; border-radius: 999px; background: #FFFFFF; color: #25352A; font-weight: 700; text-decoration: none; font-size: 16px;">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg>
+Agendar minha avaliação</a>
+<a href="#especialidades" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.35); color: #FFFFFF; font-weight: 600; text-decoration: none; font-size: 16px;">Ver especialidades</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.14); font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.9);">
+<span style="display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">Avaliação completa</span>
+<span style="display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">Acompanhamento individual</span>
+<span style="display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">Tratamento personalizado</span>
+<span style="display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">Bebedouro e Monte Azul Paulista</span>
+</div>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; position: relative;">
+<img src="img/kamyla-studio.jpg" alt="Kamyla Napole, fisioterapeuta, sorrindo em frente ao símbolo da marca" class="hero-img" style="width: 100%; height: 620px; object-fit: cover; object-position: center 30%; border-radius: 28px; display: block;">
+<div class="hero-card" style="position: absolute; left: -20px; bottom: 32px; background: #FFFFFF; color: #25352A; border-radius: 20px; padding: 18px 22px; display: flex; align-items: center; gap: 14px; box-shadow: 0 20px 40px rgba(0,0,0,0.25); max-width: 340px;">
+<img loading="lazy" src="img/icon.png" alt="" style="width: 44px; height: 44px; display: block;">
+<div style="display: flex; flex-direction: column;"><span style="font-weight: 700; font-size: 16px;">Kamyla Napole</span><span style="font-size: 14px; color: #48664E;">Fisioterapeuta</span><span style="font-size: 13px; color: #4C5A4F; white-space: nowrap;">CREFITO 3-405188-F</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- DORES -->
+<section style="background: #FFFFFF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px;">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 14px;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #48664E;">Você se identifica?</span>
+<h2 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; letter-spacing: -0.015em;">A dor não precisa ser o seu normal.</h2>
+</div>
+<p style="flex: 1 1 380px; min-width: 0; margin: 0; color: #4C5A4F;">Se algum desses cenários faz parte da sua rotina, uma avaliação de fisioterapia é o primeiro passo para entender o que está acontecendo.</p>
+</div>
+<div class="rail" style="display: flex; flex-wrap: wrap; gap: 20px;">
+<div style="flex: 1 1 300px; min-width: 0; padding: 28px; border-radius: 20px; background: #F3F5F1; display: flex; flex-direction: column; gap: 12px;">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#48664E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M8 5h8"></path><path d="M7 9h10"></path><path d="M8 13h8"></path><path d="M9 17h6"></path></svg>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Dor na coluna ou hérnia de disco</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Dor lombar, cervical ou que irradia para braços e pernas e atrapalha o seu dia.</p>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; padding: 28px; border-radius: 20px; background: #F3F5F1; display: flex; flex-direction: column; gap: 12px;">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#48664E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Dor persistente que não melhora</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Meses convivendo com a mesma dor, tentando de tudo sem resultado duradouro.</p>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; padding: 28px; border-radius: 20px; background: #F3F5F1; display: flex; flex-direction: column; gap: 12px;">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#48664E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l2-5 4 10 2-5h7"></path></svg>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Perda de mobilidade, equilíbrio ou força</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Dificuldade em movimentos simples, insegurança ao caminhar e medo de quedas.</p>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; padding: 28px; border-radius: 20px; background: #F3F5F1; display: flex; flex-direction: column; gap: 12px;">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#48664E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"></path><path d="M3 12h18"></path><rect x="3" y="3" width="18" height="18" rx="5"></rect></svg>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Recuperação após cirurgia</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Reabilitação no pós-operatório para recuperar o movimento com segurança.</p>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; padding: 28px; border-radius: 20px; background: #F3F5F1; display: flex; flex-direction: column; gap: 12px;">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#48664E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7v10"></path><path d="M18 7v10"></path><path d="M3 10v4"></path><path d="M21 10v4"></path><path d="M6 12h12"></path></svg>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Limitações físicas e perda de condicionamento</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Cansaço e falta de força para o dia a dia, o treino ou as atividades que você ama.</p>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; padding: 28px; border-radius: 20px; background: #F3F5F1; display: flex; flex-direction: column; gap: 12px;">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#48664E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8c3-3 6 3 9 0s6 3 9 0"></path><path d="M3 16c3-3 6 3 9 0s6 3 9 0"></path></svg>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Tensão muscular e rigidez recorrentes</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Pescoço, ombros ou costas sempre travados, com a sensação de que a tensão sempre volta.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ESPECIALIDADES -->
+<section id="especialidades" style="background: #F3F5F1;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px;">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #48664E;">Especialidades</span>
+<h2 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; letter-spacing: -0.015em;">Tratamento completo, do alívio da dor à performance.</h2>
+</div>
+<div class="rail" style="display: flex; flex-wrap: wrap; gap: 20px;">
+<div class="card-hover" style="flex: 1 1 360px; min-width: 0; border-radius: 24px; background: #FFFFFF; overflow: hidden; display: flex; flex-direction: column;">
+<img loading="lazy" src="img/terapia-manual.jpg" alt="Kamyla realizando terapia manual na coluna de uma paciente" style="width: 100%; height: 260px; object-fit: cover; object-position: center 55%; display: block;">
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 24px;">Traumato-Ortopédica</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Reabilitação de dores, lesões e pós-operatório em coluna, ombro, joelho, quadril e demais articulações.</p>
+</div>
+</div>
+<div class="card-hover" style="flex: 1 1 360px; min-width: 0; border-radius: 24px; background: #FFFFFF; overflow: hidden; display: flex; flex-direction: column;">
+<img loading="lazy" src="img/kamyla-academia.jpg" alt="Kamyla na academia, ao lado de equipamentos de treino" style="width: 100%; height: 260px; object-fit: cover; object-position: center 20%; display: block;">
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 24px;">Esportiva</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Tratamento de lesões do esporte e retorno seguro ao treino, à corrida e à competição.</p>
+</div>
+</div>
+<div class="card-hover" style="flex: 1 1 360px; min-width: 0; border-radius: 24px; background: #FFFFFF; overflow: hidden; display: flex; flex-direction: column;">
+<img loading="lazy" src="img/atendimento-domiciliar.jpg" alt="Kamyla atendendo uma paciente idosa em cadeira de rodas" style="width: 100%; height: 260px; object-fit: cover; object-position: center 40%; display: block;">
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 24px;">Geriatria</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Força, equilíbrio e mobilidade para a pessoa idosa manter a independência no dia a dia.</p>
+</div>
+</div>
+</div>
+<div class="rail" style="display: flex; flex-wrap: wrap; gap: 20px;">
+<div style="flex: 1 1 300px; min-width: 0; padding: 28px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E1E6DF; display: flex; gap: 18px; align-items: flex-start;">
+<div style="flex: 0 0 52px; height: 52px; border-radius: 16px; background: #E6EEE4; display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#25352A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h4l2-6 4 12 2-6h4"></path></svg></div>
+<div style="display: flex; flex-direction: column; gap: 6px;"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Reabilitação funcional</h3><p style="margin: 0; font-size: 16px; color: #4C5A4F;">Exercícios que devolvem os movimentos do seu dia a dia com força e controle.</p></div>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; padding: 28px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E1E6DF; display: flex; gap: 18px; align-items: flex-start;">
+<div style="flex: 0 0 52px; height: 52px; border-radius: 16px; background: #E6EEE4; display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#25352A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"></path><path d="M9 12l2 2 4-4"></path></svg></div>
+<div style="display: flex; flex-direction: column; gap: 6px;"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Performance e prevenção</h3><p style="margin: 0; font-size: 16px; color: #4C5A4F;">Identificar riscos antes que virem lesão e evoluir o seu rendimento.</p></div>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; padding: 28px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E1E6DF; display: flex; gap: 18px; align-items: flex-start;">
+<div style="flex: 0 0 52px; height: 52px; border-radius: 16px; background: #E6EEE4; display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#25352A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-4 0v5"></path><path d="M14 10V4a2 2 0 0 0-4 0v6"></path><path d="M10 10.5V6a2 2 0 0 0-4 0v8a8 8 0 0 0 16 0v-2a2 2 0 0 0-4 0"></path></svg></div>
+<div style="display: flex; flex-direction: column; gap: 6px;"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Terapia manual</h3><p style="margin: 0; font-size: 16px; color: #4C5A4F;">Técnicas manuais e instrumentais para aliviar a dor e liberar o movimento.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" style="background: #FFFFFF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center;">
+<div style="flex: 1 1 420px; min-width: 0;">
+<img loading="lazy" src="img/avaliacao-exames.jpg" alt="Kamyla analisando exames de imagem no computador" class="tall-img" style="width: 100%; height: 640px; object-fit: cover; object-position: center 30%; border-radius: 28px; display: block;">
+</div>
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 32px;">
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #48664E;">Como funciona</span>
+<h2 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; letter-spacing: -0.015em;">Um caminho claro, do primeiro dia até a alta.</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 0;">
+<div style="display: flex; gap: 20px; padding: 22px 0; border-top: 1px solid #E1E6DF;">
+<span style="flex: 0 0 48px; font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 600; color: #48664E;">01</span>
+<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Avaliação completa</h3><p style="margin: 0; font-size: 16px; color: #4C5A4F;">Conversa sobre a sua história, análise de exames e testes físicos para encontrar a origem do problema.</p></div>
+</div>
+<div style="display: flex; gap: 20px; padding: 22px 0; border-top: 1px solid #E1E6DF;">
+<span style="flex: 0 0 48px; font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 600; color: #48664E;">02</span>
+<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Plano individual</h3><p style="margin: 0; font-size: 16px; color: #4C5A4F;">Objetivos definidos com você e um plano de tratamento pensado para a sua rotina.</p></div>
+</div>
+<div style="display: flex; gap: 20px; padding: 22px 0; border-top: 1px solid #E1E6DF;">
+<span style="flex: 0 0 48px; font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 600; color: #48664E;">03</span>
+<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Tratamento ativo</h3><p style="margin: 0; font-size: 16px; color: #4C5A4F;">Terapia manual para aliviar a dor e exercícios para fortalecer e devolver o movimento.</p></div>
+</div>
+<div style="display: flex; gap: 20px; padding: 22px 0; border-top: 1px solid #E1E6DF; border-bottom: 1px solid #E1E6DF;">
+<span style="flex: 0 0 48px; font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 600; color: #48664E;">04</span>
+<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 21px;">Autonomia e prevenção</h3><p style="margin: 0; font-size: 16px; color: #4C5A4F;">Você sai com orientações para manter o resultado e evitar que a dor volte.</p></div>
+</div>
+</div>
+<a class="btn-wa" href="https://wa.me/5517991807798?text=Ol%C3%A1%2C%20Kamyla!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 28px; border-radius: 999px; background: #48664E; color: #FFFFFF; font-weight: 700; text-decoration: none; font-size: 16px;">Quero começar pela avaliação</a>
+</div>
+</div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" style="background: #25352A; color: #FFFFFF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap-reverse; gap: 64px; align-items: center;">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #BFD3BC;">Sobre mim</span>
+<h2 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; letter-spacing: -0.015em;">Prazer, sou a Kamyla Napole.</h2>
+<p style="margin: 0; font-size: 18px; color: rgba(255,255,255,0.84);">Sou fisioterapeuta com atuação em traumato-ortopedia, fisioterapia esportiva e geriatria. Meu trabalho une terapia manual e reabilitação funcional para que cada paciente volte a fazer o que ama, com menos dor e mais confiança no próprio corpo.</p>
+<p style="margin: 0; font-size: 18px; color: rgba(255,255,255,0.84);">Sou formada em Fisioterapia pela UNIFAFIBE e há quase 3 anos ajudo pacientes a voltarem a se mover com menos dor e mais autonomia.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; padding-top: 4px;">
+<span style="padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,0.1); font-size: 14px; font-weight: 600;">Traumato-Ortopédica</span>
+<span style="padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,0.1); font-size: 14px; font-weight: 600;">Esportiva</span>
+<span style="padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,0.1); font-size: 14px; font-weight: 600;">Geriatria</span>
+<span style="padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,0.1); font-size: 14px; font-weight: 600;">Terapia manual</span>
+<span style="padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,0.1); font-size: 14px; font-weight: 600;">PNF</span>
+</div>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; gap: 16px;">
+<img loading="lazy" src="img/kamyla-jaleco.jpg" alt="Kamyla Napole de jaleco branco" class="sobre-img" style="flex: 1 1 0; min-width: 0; height: 560px; object-fit: cover; object-position: center 20%; border-radius: 28px; display: block;">
+<img loading="lazy" src="img/tecnica-instrumental.jpg" alt="Kamyla aplicando técnica instrumental na região lombar de uma paciente" class="sobre-img sobre-img-2" style="flex: 1 1 0; min-width: 0; height: 560px; object-fit: cover; object-position: center 45%; border-radius: 28px; display: block; margin-top: 56px;">
+</div>
+</div>
+</section>
+
+<!-- FORMACAO -->
+<section id="formacao" style="background: #FFFFFF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px;">
+<div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 14px;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #48664E;">Formação</span>
+<h2 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; letter-spacing: -0.015em;">Formação complementar para um cuidado mais completo.</h2>
+</div>
+<p style="flex: 1 1 360px; min-width: 0; margin: 0; color: #4C5A4F;">Formada pela UNIFAFIBE, sigo me aperfeiçoando nos casos que mais aparecem no consultório, para oferecer um tratamento atualizado e seguro.</p>
+</div>
+<div class="rail" style="display: flex; flex-wrap: wrap; gap: 20px;">
+<div style="flex: 1 1 260px; min-width: 0; padding: 32px 28px; border-radius: 24px; background: #F3F5F1; border: 1px solid #E1E6DF; display: flex; flex-direction: column; gap: 14px;">
+<span style="font-size: 13px; font-weight: 700; color: #48664E; letter-spacing: 0.08em;">CAPACITAÇÃO</span>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2;">Hérnia de disco</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Avaliação e tratamento direcionados para quem sofre com hérnia de disco.</p>
+</div>
+<div style="flex: 1 1 260px; min-width: 0; padding: 32px 28px; border-radius: 24px; background: #F3F5F1; border: 1px solid #E1E6DF; display: flex; flex-direction: column; gap: 14px;">
+<span style="font-size: 13px; font-weight: 700; color: #48664E; letter-spacing: 0.08em;">CAPACITAÇÃO</span>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2;">Dor crônica</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Abordagem atualizada para quem convive com dor persistente.</p>
+</div>
+<div style="flex: 1 1 260px; min-width: 0; padding: 32px 28px; border-radius: 24px; background: #F3F5F1; border: 1px solid #E1E6DF; display: flex; flex-direction: column; gap: 14px;">
+<span style="font-size: 13px; font-weight: 700; color: #48664E; letter-spacing: 0.08em;">CAPACITAÇÃO</span>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2;">Reabilitação funcional</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Exercícios terapêuticos para devolver os movimentos do dia a dia.</p>
+</div>
+<div style="flex: 1 1 260px; min-width: 0; padding: 32px 28px; border-radius: 24px; background: #F3F5F1; border: 1px solid #E1E6DF; display: flex; flex-direction: column; gap: 14px;">
+<span style="font-size: 13px; font-weight: 700; color: #48664E; letter-spacing: 0.08em;">CAPACITAÇÃO</span>
+<h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2;">Técnicas de PNF</h3>
+<p style="margin: 0; font-size: 16px; color: #4C5A4F;">Facilitação neuromuscular proprioceptiva para ganho de força, mobilidade e controle.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section style="background: #F3F5F1;">
+<div style="max-width: 900px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px;">
+<div style="display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #48664E;">Dúvidas frequentes</span>
+<h2 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; letter-spacing: -0.015em;">Antes de agendar</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<details style="background: #FFFFFF; border-radius: 18px; padding: 0 28px;">
+<summary style="display: flex; align-items: center; gap: 16px; min-height: 72px; padding: 14px 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 600;"><span style="flex: 0 0 auto; font-size: 15px; font-weight: 600; color: #48664E;">01</span><span style="flex: 1 1 auto; min-width: 0;">Como funciona a primeira consulta?</span><span class="faq-plus" aria-hidden="true" style="flex: 0 0 auto; font-size: 28px; color: #48664E; line-height: 1;">+</span></summary>
+<p style="margin: 0; padding: 0 0 24px 35px; font-size: 16px; color: #4C5A4F;">A primeira consulta é dedicada a compreender sua história, avaliar suas necessidades e identificar os fatores relevantes para o seu quadro. A partir dessa análise, definimos os objetivos terapêuticos e as estratégias mais adequadas para o seu caso.</p>
+</details>
+<details style="background: #FFFFFF; border-radius: 18px; padding: 0 28px;">
+<summary style="display: flex; align-items: center; gap: 16px; min-height: 72px; padding: 14px 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 600;"><span style="flex: 0 0 auto; font-size: 15px; font-weight: 600; color: #48664E;">02</span><span style="flex: 1 1 auto; min-width: 0;">Quanto tempo dura cada atendimento?</span><span class="faq-plus" aria-hidden="true" style="flex: 0 0 auto; font-size: 28px; color: #48664E; line-height: 1;">+</span></summary>
+<p style="margin: 0; padding: 0 0 24px 35px; font-size: 16px; color: #4C5A4F;">Os atendimentos têm duração aproximada de 50 a 60 minutos, proporcionando tempo adequado para a realização das condutas terapêuticas planejadas de acordo com as necessidades e os objetivos de cada paciente. A primeira consulta inclui uma avaliação criteriosa, que orienta a definição do plano de tratamento individualizado.</p>
+</details>
+<details style="background: #FFFFFF; border-radius: 18px; padding: 0 28px;">
+<summary style="display: flex; align-items: center; gap: 16px; min-height: 72px; padding: 14px 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 600;"><span style="flex: 0 0 auto; font-size: 15px; font-weight: 600; color: #48664E;">03</span><span style="flex: 1 1 auto; min-width: 0;">Preciso de encaminhamento médico para iniciar o tratamento?</span><span class="faq-plus" aria-hidden="true" style="flex: 0 0 auto; font-size: 28px; color: #48664E; line-height: 1;">+</span></summary>
+<p style="margin: 0; padding: 0 0 24px 35px; font-size: 16px; color: #4C5A4F;">Não é necessário apresentar encaminhamento médico para iniciar o atendimento fisioterapêutico particular. Caso possua exames ou relatórios relacionados à sua condição, eles poderão contribuir para a avaliação.</p>
+</details>
+<details style="background: #FFFFFF; border-radius: 18px; padding: 0 28px;">
+<summary style="display: flex; align-items: center; gap: 16px; min-height: 72px; padding: 14px 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 600;"><span style="flex: 0 0 auto; font-size: 15px; font-weight: 600; color: #48664E;">04</span><span style="flex: 1 1 auto; min-width: 0;">Como é definido o plano de tratamento?</span><span class="faq-plus" aria-hidden="true" style="flex: 0 0 auto; font-size: 28px; color: #48664E; line-height: 1;">+</span></summary>
+<p style="margin: 0; padding: 0 0 24px 35px; font-size: 16px; color: #4C5A4F;">Cada plano é elaborado de forma individualizada, considerando sua condição clínica, seus objetivos, sua rotina e sua resposta ao tratamento. A evolução é acompanhada ao longo do processo, permitindo os ajustes necessários em cada etapa.</p>
+</details>
+<details style="background: #FFFFFF; border-radius: 18px; padding: 0 28px;">
+<summary style="display: flex; align-items: center; gap: 16px; min-height: 72px; padding: 14px 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 600;"><span style="flex: 0 0 auto; font-size: 15px; font-weight: 600; color: #48664E;">05</span><span style="flex: 1 1 auto; min-width: 0;">Como saberei se estou evoluindo?</span><span class="faq-plus" aria-hidden="true" style="flex: 0 0 auto; font-size: 28px; color: #48664E; line-height: 1;">+</span></summary>
+<p style="margin: 0; padding: 0 0 24px 35px; font-size: 16px; color: #4C5A4F;">A evolução é monitorada por meio de avaliações e reavaliações periódicas, com parâmetros clínicos e funcionais selecionados de acordo com cada caso. São considerados aspectos como dor, mobilidade, força, desempenho funcional e capacidade para realizar as atividades do dia a dia. Esses dados permitem acompanhar os resultados de forma objetiva, ajustar as estratégias terapêuticas quando necessário e direcionar o tratamento de acordo com a resposta individual de cada paciente.</p>
+</details>
+<details style="background: #FFFFFF; border-radius: 18px; padding: 0 28px;">
+<summary style="display: flex; align-items: center; gap: 16px; min-height: 72px; padding: 14px 0; font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 600;"><span style="flex: 0 0 auto; font-size: 15px; font-weight: 600; color: #48664E;">06</span><span style="flex: 1 1 auto; min-width: 0;">Vocês atendem por convênio?</span><span class="faq-plus" aria-hidden="true" style="flex: 0 0 auto; font-size: 28px; color: #48664E; line-height: 1;">+</span></summary>
+<p style="margin: 0; padding: 0 0 24px 35px; font-size: 16px; color: #4C5A4F;">Os atendimentos são realizados de forma particular, proporcionando um acompanhamento individualizado, com avaliação criteriosa, planejamento terapêutico personalizado e atenção às necessidades de cada paciente. Caso seu plano de saúde ofereça a possibilidade de reembolso, recomendamos consultar diretamente a operadora para verificar as condições e a documentação necessária.</p>
+</details>
+</div>
+</div>
+</section>
+
+<!-- ONDE ATENDO -->
+<section id="atendimento" style="background: #FFFFFF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px;">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 14px;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #48664E;">Atendimento</span>
+<h2 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; letter-spacing: -0.015em;">Atendo em Bebedouro e Monte Azul Paulista.</h2>
+</div>
+<p style="flex: 1 1 380px; min-width: 0; margin: 0; color: #4C5A4F;">Clínica Expertise em Bebedouro e atendimento domiciliar nas duas cidades.</p>
+</div>
+<div class="cities" style="display: flex; flex-wrap: wrap; gap: 20px;">
+<div style="flex: 1 1 420px; min-width: 0; padding: 36px; border-radius: 24px; background: #F3F5F1; border: 1px solid #E1E6DF; display: flex; flex-direction: column; gap: 18px;">
+<div style="display: flex; align-items: center; gap: 14px;">
+<div style="flex: 0 0 52px; height: 52px; border-radius: 16px; background: #E6EEE4; display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#25352A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg></div>
+<h3 class="city-title" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 30px;">Bebedouro <span style="font-weight: 400; color: #48664E;">· SP</span></h3>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px; font-size: 16px; color: #4C5A4F;">
+<div style="display: flex; align-items: center; gap: 10px;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48664E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V7l7-4 7 4v14"></path><path d="M10 21v-5h4v5"></path></svg><span><strong style="color: #25352A;">Clínica Expertise:</strong> R. São João, 1195</span></div>
+<div style="display: flex; align-items: center; gap: 10px;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48664E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h14V10"></path></svg><span><strong style="color: #25352A;">Atendimento domiciliar</strong></span></div>
+</div>
+<a class="btn-wa" href="https://www.google.com/maps/search/?api=1&amp;query=R.%20S%C3%A3o%20Jo%C3%A3o%2C%201195%2C%20Bebedouro%20-%20SP" target="_blank" rel="noopener" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 999px; background: #48664E; color: #FFFFFF; font-weight: 700; text-decoration: none; font-size: 16px;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>Ver no Google Maps</a>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; padding: 36px; border-radius: 24px; background: #F3F5F1; border: 1px solid #E1E6DF; display: flex; flex-direction: column; gap: 18px;">
+<div style="display: flex; align-items: center; gap: 14px;">
+<div style="flex: 0 0 52px; height: 52px; border-radius: 16px; background: #E6EEE4; display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#25352A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg></div>
+<h3 class="city-title" style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 30px;">Monte Azul Paulista <span style="font-weight: 400; color: #48664E;">· SP</span></h3>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px; font-size: 16px; color: #4C5A4F;">
+<div style="display: flex; align-items: center; gap: 10px;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48664E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h14V10"></path></svg><span><strong style="color: #25352A;">Atendimento domiciliar</strong></span></div>
+<span>Vou até você, com o mesmo cuidado do consultório.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="contato" style="background: #25352A; color: #FFFFFF; overflow: hidden;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center;">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+<h2 style="margin: 0; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: clamp(36px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.02em;">O primeiro passo é entender a sua dor.</h2>
+<p style="margin: 0; font-size: 19px; color: rgba(255,255,255,0.82); max-width: 520px;">Agende sua avaliação pelo WhatsApp e receba um plano de tratamento feito para você.</p>
+<a class="btn-light" href="https://wa.me/5517991807798?text=Ol%C3%A1%2C%20Kamyla!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 60px; padding: 0 32px; border-radius: 999px; background: #FFFFFF; color: #25352A; font-weight: 700; text-decoration: none; font-size: 17px;">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg>
+<span class="cta-long">Falar com a Kamyla no WhatsApp</span><span class="cta-short">Agendar pelo WhatsApp</span></a>
+</div>
+<div class="cta-photo" style="flex: 1 1 360px; min-width: 0;">
+<img loading="lazy" src="img/kamyla-corpo-verde.jpg" alt="Kamyla Napole sorrindo em frente a um fundo verde" class="tall-img" style="width: 100%; height: 520px; object-fit: cover; object-position: center 25%; border-radius: 28px; display: block;">
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #1C2820; color: rgba(255,255,255,0.78);">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<img loading="lazy" src="img/logo-white.png" alt="Kamyla Napole Fisioterapeuta" style="width: 220px; height: auto; display: block;">
+<span style="font-size: 14px;">CREFITO 3-405188-F</span>
+</div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 8px; font-size: 15px;">
+<span style="color: #FFFFFF; font-weight: 700;">Atendimento</span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=R.%20S%C3%A3o%20Jo%C3%A3o%2C%201195%2C%20Bebedouro%20-%20SP" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.78);">Bebedouro · SP: Clínica Expertise, R. São João, 1195</a>
+<span>Bebedouro e Monte Azul Paulista: domiciliar</span>
+</div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 8px; font-size: 15px;">
+<span style="color: #FFFFFF; font-weight: 700;">Contato</span>
+<a href="https://wa.me/5517991807798?text=Ol%C3%A1%2C%20Kamyla!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." style="color: rgba(255,255,255,0.78);">WhatsApp (17) 99180-7798</a>
+<a href="https://instagram.com/knapole" style="color: rgba(255,255,255,0.78);">Instagram @knapole</a>
+</div>
+</div>
+<div style="max-width: 1240px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 13px; color: rgba(255,255,255,0.6);">© 2026 Kamyla Napole Fisioterapeuta</div>
+</footer>
+
+</div>
+<a class="wa-fab" href="https://wa.me/5517991807798?text=Ol%C3%A1%2C%20Kamyla!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." aria-label="Agendar pelo WhatsApp"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg></a>
+<script>(function(){var f=document.querySelector('.wa-fab');function t(){f.classList.toggle('show',window.scrollY>window.innerHeight*0.7&&window.scrollY+window.innerHeight<document.documentElement.scrollHeight-260)}window.addEventListener('scroll',t,{passive:true});t();})();</script>
+</body>
+</html>
